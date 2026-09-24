@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Metadatos Principales -->
+  <title>Víctor Mireles | Analista de Sistemas & Desarrollador</title>
+  <meta name="description" content="Portafolio profesional de Víctor Mireles, estudiante de Análisis de Sistemas y desarrollador interesado en desarrollo web, programación, análisis de datos e inteligencia artificial.">
+  <meta name="author" content="Víctor Johan Mireles Torres">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Víctor Mireles, Análisis de Sistemas, Desarrollador Web, IUTEPI, Python, Laravel, C++, Power BI, Acarigua, Venezuela, Portafolio">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Víctor Mireles | Analista de Sistemas & Desarrollador">
+  <meta property="og:description" content="Portafolio profesional y proyectos de desarrollo web, software y análisis de datos.">
+  <meta property="og:locale" content="es_LA">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Principales (Ruta Relativa para GitHub Pages) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER & NAVEGACIÓN
+       ========================================================================= -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="#inicio" class="nav-brand" aria-label="Ir al inicio">
+        <span class="brand-badge">&lt;VM/&gt;</span>
+        <div class="brand-name">
+          <span>Víctor Mireles</span>
+          <span class="brand-role">Análisis de Sistemas</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación Desktop / Móvil -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#formacion" class="nav-link">Formación</a></li>
+        <li><a href="#cv" class="nav-link">CV</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Botón Menú Hamburguesa Móvil -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         1. SECCIÓN HERO / INICIO
+         ========================================================================= -->
+    <section class="section hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Disponible para nuevos proyectos & aprendizaje</span>
+          </div>
+
+          <h1 class="hero-greeting">
+            Hola, soy <span class="text-gradient">Víctor Mireles</span>
+          </h1>
+
+          <div class="hero-role">
+            <i class="fa-solid fa-code"></i>
+            <span>Estudiante de Análisis de Sistemas & Desarrollador</span>
+          </div>
+
+          <p class="hero-description">
+            Desarrollo soluciones web y aplicaciones orientadas a la gestión, automatización y resolución de problemas, mientras continúo fortaleciendo mis conocimientos en programación, bases de datos e inteligencia artificial.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Ver proyectos</span>
+            </a>
+            <a href="assets/docs/CV_Victor_Mireles.pdf" class="btn btn-secondary btn-download-cv" download="CV_Victor_Mireles.pdf">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Descargar CV</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="hero-social-label">Conecta conmigo:</span>
+            <!-- Reemplaza TU_GITHUB y TU_LINKEDIN con tus enlaces de perfil -->
+            <a href="https://github.com/Victor67567" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="GitHub de Víctor Mireles">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/Victor67567" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="LinkedIn de Víctor Mireles">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#contacto" class="social-pill-link" aria-label="Enviar correo">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Elemento Visual Tecnológico: Panel de Código / Tarjeta de Desarrollador -->
+        <div class="hero-visual reveal">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-file-code"></i>
+                <span>developer.config.ts</span>
+              </div>
+              <div class="terminal-actions">
+                <button class="terminal-btn" id="copy-code-btn" title="Copiar configuración" aria-label="Copiar código">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="terminal-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">nombre</span>: <span class="code-str">"Víctor Johan Mireles Torres"</span>,
+  <span class="code-prop">perfil</span>: <span class="code-str">"Estudiante & Desarrollador de Sistemas"</span>,
+  <span class="code-prop">institucion</span>: <span class="code-str">"IUTEPI (6to Semestre)"</span>,
+  <span class="code-prop">ubicacion</span>: <span class="code-str">"Acarigua, Venezuela"</span>,
+  <span class="code-prop">stackPrincipal</span>: [
+    <span class="code-str">"Python"</span>,
+    <span class="code-str">"PHP / Laravel"</span>,
+    <span class="code-str">"JavaScript"</span>,
+    <span class="code-str">"C++"</span>,
+    <span class="code-str">"MySQL / SQLite"</span>,
+    <span class="code-str">"Power BI"</span>
+  ],
+  <span class="code-prop">enfoque</span>: <span class="code-str">"Construir soluciones reales y eficientes 🚀"</span>
+};</code></pre>
+            </div>
+
+            <div class="terminal-status-bar">
+              <div class="status-item">
+                <span class="pulse-dot"></span>
+                <span>TypeScript / UTF-8</span>
+              </div>
+              <div class="status-item">
+                <span>Estado: Activo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. SECCIÓN SOBRE MÍ
+         ========================================================================= -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-user"></i>
+            <span>Perfil</span>
+          </span>
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="section-subtitle">Conoce mi trayectoria académica, intereses técnicos y filosofía de trabajo.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-text">
+              <p>
+                Soy estudiante de <span class="about-highlight">Análisis de Sistemas en IUTEPI</span>, interesado en el desarrollo de software, aplicaciones web, bases de datos e inteligencia artificial.
+              </p>
+              <p>
+                Me gusta aprender mediante <span class="about-highlight">proyectos prácticos</span> y construir soluciones que puedan utilizarse en situaciones reales.
+              </p>
+              <p>
+                Actualmente estoy fortaleciendo mis conocimientos en desarrollo web, programación, análisis de datos e inteligencia artificial.
+              </p>
+            </div>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Desarrollo Práctico</span>
+              </div>
+              <div class="pillar-item">
+                <i class="fa-solid fa-database"></i>
+                <span>Estructuras de Datos</span>
+              </div>
+              <div class="pillar-item">
+                <i class="fa-solid fa-brain"></i>
+                <span>Inteligencia Artificial</span>
+              </div>
+              <div class="pillar-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Análisis & Optimización</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-info-stack reveal">
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="info-content">
+                <h4>Institución</h4>
+                <p>IUTEPI</p>
+                <span>Instituto Univ. de Tecnología para la Informática</span>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="info-content">
+                <h4>Carrera</h4>
+                <p>Análisis de Sistemas</p>
+                <span>6to Semestre en curso</span>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="info-content">
+                <h4>Ubicación</h4>
+                <p>Acarigua, Venezuela</p>
+                <span>Disponible para proyectos remotos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. SECCIÓN HABILIDADES
+         ========================================================================= -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Tecnologías</span>
+          </span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <p class="section-subtitle">Lenguajes, frameworks, bases de datos y herramientas con las que construyo proyectos.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Categoría 1: Lenguajes -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="skill-category-icon icon-lenguajes">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="skill-category-title">Lenguajes</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge"><i class="fa-brands fa-python"></i><span>Python</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-code"></i><span>C++</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            </div>
+          </div>
+
+          <!-- Categoría 2: Desarrollo Web -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="skill-category-icon icon-web">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="skill-category-title">Desarrollo Web</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-square-js"></i><span>JavaScript</span></div>
+            </div>
+          </div>
+
+          <!-- Categoría 3: Bases de Datos -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="skill-category-icon icon-db">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="skill-category-title">Bases de Datos</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-table"></i><span>SQLite</span></div>
+            </div>
+          </div>
+
+          <!-- Categoría 4: Herramientas -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="skill-category-icon icon-tools">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <h3 class="skill-category-title">Herramientas</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-server"></i><span>Laragon</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-column"></i><span>Power BI</span></div>
+            </div>
+          </div>
+
+          <!-- Categoría 5: Otros Conocimientos -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="skill-category-icon icon-otros">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="skill-category-title">Otros</h3>
+            </div>
+            <div class="skill-badges-container">
+              <div class="skill-badge"><i class="fa-solid fa-network-wired"></i><span>Inteligencia Artificial</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-pie"></i><span>Análisis de datos</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-cubes"></i><span>Prog. Orientada a Objetos</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. SECCIÓN PROYECTOS
+         ========================================================================= -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Portafolio</span>
+          </span>
+          <h2 class="section-title">Proyectos</h2>
+          <p class="section-subtitle">Explora proyectos académicos, personales y aplicaciones web en desarrollo.</p>
+        </div>
+
+        <!-- Filtros Dinámicos de Proyectos -->
+        <div class="projects-filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="cpp">C++</button>
+          <button class="filter-btn" data-filter="datos">Datos</button>
+          <button class="filter-btn" data-filter="academico">Proyectos Académicos</button>
+        </div>
+
+        <!-- Grilla de Proyectos -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROYECTO 1: Cine Mall -->
+          <article class="project-card reveal" data-category="web academico">
+            <div class="project-preview">
+              <span class="project-status status-dev">
+                <i class="fa-solid fa-hammer"></i> En desarrollo
+              </span>
+              <!-- Placeholder elegante estructurado (Puedes reemplazar este div por <img src="assets/images/cine-mall.png" alt="Cine Mall" class="project-img">) -->
+              <div class="project-placeholder">
+                <div class="placeholder-pattern"></div>
+                <div class="placeholder-icon icon-cinema">
+                  <i class="fa-solid fa-film"></i>
+                </div>
+                <span class="placeholder-tag">Laravel + MySQL System</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Cine Mall</h3>
+              <p class="project-description">
+                Sistema web orientado a la gestión de películas, salas, funciones, usuarios y venta de boletos.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Blade</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm btn-view-project" data-project-id="cine-mall">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Ver detalles</span>
+                </button>
+                <!-- Enlace de código listo para cuando esté publicado en GitHub -->
+                <a href="https://github.com/Victor67567" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Repositorio en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 2: Sistema de Inventario y Facturación -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-preview">
+              <span class="project-status status-dev">
+                <i class="fa-solid fa-hammer"></i> En desarrollo
+              </span>
+              <div class="project-placeholder">
+                <div class="placeholder-pattern"></div>
+                <div class="placeholder-icon icon-inventory">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <span class="placeholder-tag">Web Store Management</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Inventario y Facturación</h3>
+              <p class="project-description">
+                Sistema web conceptual para la gestión de inventario, ventas y facturación de una tienda de ropa, calzado y accesorios.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Base de datos</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm btn-view-project" data-project-id="inventario-facturacion">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Ver detalles</span>
+                </button>
+                <a href="https://github.com/Victor67567" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Repositorio en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 3: BeatStore -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-preview">
+              <span class="project-status status-personal">
+                <i class="fa-solid fa-user-astronaut"></i> Proyecto personal
+              </span>
+              <div class="project-placeholder">
+                <div class="placeholder-pattern"></div>
+                <div class="placeholder-icon icon-audio">
+                  <i class="fa-solid fa-music"></i>
+                </div>
+                <span class="placeholder-tag">Producer Beat Marketplace</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BeatStore</h3>
+              <p class="project-description">
+                Concepto de marketplace enfocado en productores musicales, gestión de beats y venta de instrumentales.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm btn-view-project" data-project-id="beatstore">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Ver detalles</span>
+                </button>
+                <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Repositorio en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 4: Sistema de Gestión de Personal -->
+          <article class="project-card reveal" data-category="python academico">
+            <div class="project-preview">
+              <span class="project-status status-academic">
+                <i class="fa-solid fa-graduation-cap"></i> Proyecto académico
+              </span>
+              <div class="project-placeholder">
+                <div class="placeholder-pattern"></div>
+                <div class="placeholder-icon icon-users">
+                  <i class="fa-solid fa-id-card-clip"></i>
+                </div>
+                <span class="placeholder-tag">Python & SQLite System</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Gestión de Personal</h3>
+              <p class="project-description">
+                Sistema desarrollado para gestionar información del personal y facilitar la consulta y administración de registros.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm btn-view-project" data-project-id="gestion-personal">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Ver detalles</span>
+                </button>
+                <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Repositorio en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 5: Análisis de Datos -->
+          <article class="project-card reveal" data-category="datos academico">
+            <div class="project-preview">
+              <span class="project-status status-academic">
+                <i class="fa-solid fa-graduation-cap"></i> Proyecto académico
+              </span>
+              <div class="project-placeholder">
+                <div class="placeholder-pattern"></div>
+                <div class="placeholder-icon icon-powerbi">
+                  <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <span class="placeholder-tag">Business Intelligence BI</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Análisis de Datos</h3>
+              <p class="project-description">
+                Proyecto relacionado con análisis y visualización de datos mediante dashboards e indicadores clave.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Power BI</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm btn-view-project" data-project-id="analisis-datos">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Ver detalles</span>
+                </button>
+                <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Repositorio en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 6: Drum Machine -->
+          <article class="project-card reveal" data-category="cpp">
+            <div class="project-preview">
+              <span class="project-status status-personal">
+                <i class="fa-solid fa-user-astronaut"></i> Proyecto personal
+              </span>
+              <div class="project-placeholder">
+                <div class="placeholder-pattern"></div>
+                <div class="placeholder-icon icon-synth">
+                  <i class="fa-solid fa-sliders"></i>
+                </div>
+                <span class="placeholder-tag">C++ & JUCE Audio DSP</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Drum Machine</h3>
+              <p class="project-description">
+                Proyecto orientado a la creación de una drum machine con pads, reproducción de samples y controles de sonido.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">JUCE</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm btn-view-project" data-project-id="drum-machine">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Ver detalles</span>
+                </button>
+                <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Repositorio en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. SECCIÓN FORMACIÓN
+         ========================================================================= -->
+    <section class="section" id="formacion">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Educación</span>
+          </span>
+          <h2 class="section-title">Formación Académica</h2>
+          <p class="section-subtitle">Estudios superiores y formación continua en tecnología y datos.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Formación Universitaria Principal -->
+          <div class="education-card reveal">
+            <div class="education-header">
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div>
+                <h3 class="edu-institution">Instituto Universitario de Tecnología para la Informática (IUTEPI)</h3>
+                <div class="edu-career">Carrera: Análisis de Sistemas</div>
+              </div>
+            </div>
+
+            <div class="edu-meta">
+              <div class="edu-pill">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Estado:</strong> 6to semestre (en curso)</span>
+              </div>
+              <div class="edu-pill">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Acarigua, Venezuela</span>
+              </div>
+            </div>
+
+            <p class="edu-description">
+              Formación integral enfocada en análisis de requerimientos, diseño e implementación de sistemas de información, arquitectura de bases de datos, lógica de programación y metodologías de desarrollo.
+            </p>
+          </div>
+
+          <!-- Formación Adicional / Cursos -->
+          <div class="courses-container reveal">
+            <div class="course-item">
+              <div class="course-icon icon-powerbi-bg">
+                <i class="fa-solid fa-chart-column"></i>
+              </div>
+              <div class="course-details">
+                <h4>Curso de Análisis de Datos en Power BI</h4>
+                <p>Modelado de datos, DAX, visualización de indicadores y creación de paneles interactivos.</p>
+              </div>
+            </div>
+
+            <div class="course-item">
+              <div class="course-icon icon-ai-bg">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="course-details">
+                <h4>Curso de Inteligencia Artificial</h4>
+                <p>Fundamentos teóricos, modelos predictivos y aplicaciones de machine learning en software moderno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. SECCIÓN CV
+         ========================================================================= -->
+    <section class="section" id="cv">
+      <div class="container">
+        <div class="cv-box reveal">
+          <div class="cv-icon-wrapper">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <h2 class="cv-title">¿Quieres conocer más sobre mi perfil?</h2>
+          <p class="cv-description">
+            Puedes consultar o descargar mi currículum vitae en formato PDF para obtener un resumen detallado de mis habilidades técnicas, proyectos y trayectoria académica.
+          </p>
+          <div class="cv-actions">
+            <a href="assets/docs/CV_Victor_Mireles.pdf" class="btn btn-primary btn-download-cv" download="CV_Victor_Mireles.pdf">
+              <i class="fa-solid fa-download"></i>
+              <span>Descargar CV</span>
+            </a>
+            <a href="#contacto" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contactarme directamente</span>
+            </a>
+          </div>
+          <p class="cv-hint">
+            <i class="fa-solid fa-circle-info"></i> Archivo disponible en: <code>assets/docs/CV_Victor_Mireles.pdf</code>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. SECCIÓN CONTACTO
+         ========================================================================= -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Contacto</span>
+          </span>
+          <h2 class="section-title">Hablemos</h2>
+          <p class="section-subtitle">¿Tienes alguna consulta o propuesta de colaboración? Puedes comunicarte a través de estos canales.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Tarjeta de Correo -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <span class="contact-card-title">Correo Electrónico</span>
+            <!-- Reemplaza TU_EMAIL con tu correo real en el código o script.js -->
+            <p class="contact-card-value">TU_EMAIL@ejemplo.com</p>
+            <div class="contact-card-actions-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="mailto:TU_EMAIL@ejemplo.com" class="contact-card-action">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Enviar correo
+              </a>
+              <button class="contact-card-action btn-copy-email" data-email="TU_EMAIL@ejemplo.com" style="background:none; border:none; cursor:pointer;">
+                <i class="fa-regular fa-copy"></i> Copiar
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta de GitHub -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <span class="contact-card-title">GitHub</span>
+            <p class="contact-card-value">github.com/TU_USUARIO</p>
+            <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="contact-card-action">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver repositorios
+            </a>
+          </div>
+
+          <!-- Tarjeta de LinkedIn -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <span class="contact-card-title">LinkedIn</span>
+            <p class="contact-card-value">linkedin.com/in/TU_USUARIO</p>
+            <a href="https://linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="contact-card-action">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Conectar en LinkedIn
+            </a>
+          </div>
+
+          <!-- Tarjeta de Ubicación -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span class="contact-card-title">Ubicación</span>
+            <p class="contact-card-value">Acarigua, Venezuela</p>
+            <span class="contact-card-action" style="color: var(--text-dim); text-decoration: none;">
+              <i class="fa-solid fa-globe"></i> Zona horaria (UTC-4)
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-cta-panel reveal">
+          <h3>¿Interesado en mi perfil para un proyecto o práctica?</h3>
+          <p style="color: var(--text-muted); max-width: 550px;">
+            Estoy abierto a colaborar en proyectos de desarrollo de software, aplicaciones web y análisis de datos.
+          </p>
+          <a href="mailto:TU_EMAIL@ejemplo.com" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Contactarme por correo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Víctor Mireles. Todos los derechos reservados.</p>
+      
+      <ul class="footer-links">
+        <li>
+          <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:TU_EMAIL@ejemplo.com" aria-label="Correo electrónico">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#inicio" class="back-to-top" title="Volver arriba" aria-label="Volver arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Modal de Detalles de Proyectos -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div style="margin-bottom: 8px;">
+        <span class="project-status status-dev" id="modal-project-status" style="position: static; margin-bottom: 8px; display: inline-flex;"></span>
+      </div>
+      <h3 id="modal-project-title" style="font-size: 1.4rem; margin-bottom: 12px; color: var(--text-primary);"></h3>
+      <p id="modal-project-desc" style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 0.98rem;"></p>
+      <h4 style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">Tecnologías utilizadas:</h4>
+      <div id="modal-project-tech" class="project-tech-stack" style="margin-bottom: 24px;"></div>
+      <div style="display: flex; gap: 12px; border-top: 1px solid var(--border-subtle); padding-top: 16px;">
+        <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" id="modal-project-code" class="btn btn-secondary btn-sm" style="width: 100%;">
+          <i class="fa-brands fa-github"></i>
+          <span>Ver Repositorio</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor de Notificaciones Toast -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts Principales (Ruta Relativa para GitHub Pages) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
