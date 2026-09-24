@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const CONFIG = {
     nombre: "Víctor Johan Mireles Torres",
     titulo: "Estudiante de Análisis de Sistemas & Desarrollador",
-    email: "TU_EMAIL@ejemplo.com",          // Reemplaza con tu correo real
-    github: "https://github.com/Victor67567", // Usuario real de GitHub
+    email: "victormirelest2007@gmail.com",
+    github: "https://github.com/Victor67567",
     linkedin: "https://linkedin.com/in/victormireles", // Reemplaza con tu LinkedIn real
     cvPath: "assets/docs/CV_Victor_Mireles.pdf",
     institucion: "IUTEPI",
