@@ -758,11 +758,11 @@
             <span class="contact-card-title">Correo Electrónico</span>
             <!-- Reemplaza TU_EMAIL con tu correo real en el código o script.js -->
             <p class="contact-card-value">victormirelest2007@gmail.com</p>
-            <div class="contact-card-actions-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <div class="contact-card-actions-group">
               <a href="mailto:victormirelest2007@gmail.com" class="contact-card-action">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Enviar correo
               </a>
-              <button class="contact-card-action btn-copy-email" data-email="victormirelest2007@gmail.com" style="background:none; border:none; cursor:pointer;">
+              <button class="contact-card-action btn-copy-email" data-email="victormirelest2007@gmail.com">
                 <i class="fa-regular fa-copy"></i> Copiar
               </button>
             </div>
@@ -799,7 +799,7 @@
             </div>
             <span class="contact-card-title">Ubicación</span>
             <p class="contact-card-value">Acarigua, Venezuela</p>
-            <span class="contact-card-action" style="color: var(--text-dim); text-decoration: none;">
+            <span class="contact-card-action contact-timezone-info">
               <i class="fa-solid fa-globe"></i> Zona horaria (UTC-4)
             </span>
           </div>
@@ -807,7 +807,7 @@
 
         <div class="contact-cta-panel reveal">
           <h3>¿Interesado en mi perfil para un proyecto o práctica?</h3>
-          <p style="color: var(--text-muted); max-width: 550px;">
+          <p class="contact-cta-desc">
             Estoy abierto a colaborar en proyectos de desarrollo de software, aplicaciones web y análisis de datos.
           </p>
           <a href="mailto:victormirelest2007@gmail.com" class="btn btn-primary">
@@ -857,14 +857,14 @@
       <button class="modal-close" id="modal-close-btn" aria-label="Cerrar modal">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <div style="margin-bottom: 8px;">
-        <span class="project-status status-dev" id="modal-project-status" style="position: static; margin-bottom: 8px; display: inline-flex;"></span>
+      <div>
+        <span class="project-status status-dev modal-status-badge" id="modal-project-status"></span>
       </div>
-      <h3 id="modal-project-title" style="font-size: 1.4rem; margin-bottom: 12px; color: var(--text-primary);"></h3>
-      <p id="modal-project-desc" style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 0.98rem;"></p>
-      <h4 style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">Tecnologías utilizadas:</h4>
-      <div id="modal-project-tech" class="project-tech-stack" style="margin-bottom: 24px;"></div>
-      <div style="display: flex; gap: 12px; border-top: 1px solid var(--border-subtle); padding-top: 16px;">
+      <h3 id="modal-project-title" class="modal-project-heading"></h3>
+      <p id="modal-project-desc" class="modal-project-text"></p>
+      <h4 class="modal-tech-label">Tecnologías utilizadas:</h4>
+      <div id="modal-project-tech" class="project-tech-stack modal-tech-stack"></div>
+      <div class="modal-actions">
         <a href="https://github.com/Victor67567" target="_blank" rel="noopener noreferrer" id="modal-project-code" class="btn btn-secondary btn-sm" style="width: 100%;">
           <i class="fa-brands fa-github"></i>
           <span>Ver Repositorio</span>
