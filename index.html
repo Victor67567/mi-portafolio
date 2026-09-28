@@ -33,6 +33,13 @@
 </head>
 <body>
 
+  <!-- Elementos de Iluminación Ambiental / Glow Orbs & Particle Canvas -->
+  <canvas class="bg-canvas" id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow orb-3" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
   <!-- =========================================================================
        HEADER & NAVEGACIÓN
        ========================================================================= -->
@@ -71,9 +78,6 @@
 
   <main>
     <!-- =========================================================================
-         1. SECCIÓN HERO / INICIO
-         ========================================================================= -->
-    <!-- =========================================================================
          1. SECCIÓN HERO / INICIO (Estilo fotográfico inmersivo con overlay violeta)
          ========================================================================= -->
     <section class="section hero" id="inicio">
@@ -82,14 +86,14 @@
       <div class="container hero-container">
         <!-- Monograma Hexagonal estilo portafolio moderno -->
         <div class="hero-hex-badge reveal">
-          <div class="hex-shape">
+          <div class="hex-shape floating-hex">
             <span class="hex-text">&lt;VM/&gt;</span>
           </div>
         </div>
 
         <div class="hero-grid">
           <div class="hero-content reveal">
-            <div class="status-badge">
+            <div class="status-badge pulse-badge">
               <span class="status-dot"></span>
               <span>Disponible para nuevos proyectos & aprendizaje</span>
             </div>
@@ -100,7 +104,8 @@
 
             <div class="hero-role">
               <i class="fa-solid fa-code"></i>
-              <span>Estudiante de Análisis de Sistemas en IUTEPI · Desarrollador</span>
+              <span>Especializado en </span>
+              <span class="typewriter-text" id="typewriter-text">Desarrollo Web &amp; Sistemas</span><span class="typewriter-cursor">|</span>
             </div>
 
             <p class="hero-description">
@@ -278,6 +283,41 @@
                 <span>Disponible para proyectos remotos</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Barra de Estadísticas & Métricas Animadas -->
+        <div class="stats-counter-bar reveal">
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-suffix">to</span>
+            </div>
+            <span class="stat-label">Semestre en IUTEPI</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Proyectos Clave</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="8">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Tecnologías Principales</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <span class="stat-label">Dedicación &amp; Pasión</span>
           </div>
         </div>
       </div>
