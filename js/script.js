@@ -37,12 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectModal = document.getElementById('project-modal');
   const modalCloseBtn = document.getElementById('modal-close-btn');
 
+  const navBackdrop = document.getElementById('nav-backdrop');
+
   // --------------------------------------------------------------------------
   // 3. HEADER SCROLL & NAVEGACIÓN ACTIVA
   // --------------------------------------------------------------------------
   const handleScroll = () => {
     // Sombra y fondo en header al hacer scroll
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -70,32 +72,76 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll(); // Ejecución inicial
 
   // --------------------------------------------------------------------------
-  // 4. MENÚ MÓVIL (HAMBURGUESA)
+  // 4. MENÚ MÓVIL (DRAWER MODERNO + BACKDROP + TOUCH GESTURES)
   // --------------------------------------------------------------------------
+  const openMobileMenu = () => {
+    if (!navMenu || !navToggle) return;
+    navMenu.classList.add('open');
+    navToggle.classList.add('open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    if (navBackdrop) navBackdrop.classList.add('active');
+    document.body.classList.add('menu-open');
+  };
+
+  const closeMobileMenu = () => {
+    if (!navMenu || !navToggle) return;
+    navMenu.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    if (navBackdrop) navBackdrop.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  };
+
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navMenu.classList.toggle('open');
-      navToggle.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
+
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', closeMobileMenu);
+    }
 
     // Cerrar menú al hacer clic en un enlace
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        navToggle.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', false);
+        closeMobileMenu();
       });
     });
 
-    // Cerrar menú al hacer clic fuera
-    document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('open')) {
-        navMenu.classList.remove('open');
-        navToggle.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', false);
+    // Cerrar menú al presionar tecla Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMobileMenu();
       }
     });
+
+    // Cerrar automáticamente si la ventana se redimensiona a tamaño de escritorio
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Soporte táctil para deslizar (swipe right) y cerrar el menú
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    navMenu.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    navMenu.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      // Deslizar hacia la derecha más de 50px cierra el menú
+      if (touchEndX - touchStartX > 50) {
+        closeMobileMenu();
+      }
+    }, { passive: true });
   }
 
   // --------------------------------------------------------------------------
@@ -302,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         projectModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('modal-open');
       }
     });
   });
@@ -310,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModal = () => {
     if (projectModal) {
       projectModal.classList.remove('active');
-      document.body.style.overflow = '';
+      document.body.classList.remove('modal-open');
     }
   };
 

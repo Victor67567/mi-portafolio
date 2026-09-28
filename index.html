@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07090e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
   <!-- SEO & Metadatos Principales -->
   <title>Víctor Mireles | Analista de Sistemas & Desarrollador</title>
@@ -43,19 +46,22 @@
         </div>
       </a>
 
+      <!-- Overlay Fondo para Menú Móvil -->
+      <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
       <!-- Menú de Navegación Desktop / Móvil -->
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-        <li><a href="#formacion" class="nav-link">Formación</a></li>
-        <li><a href="#cv" class="nav-link">CV</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <ul class="nav-menu" id="nav-menu" role="menu">
+        <li><a href="#inicio" class="nav-link active" role="menuitem"><i class="fa-solid fa-house nav-icon-mobile"></i><span>Inicio</span></a></li>
+        <li><a href="#sobre-mi" class="nav-link" role="menuitem"><i class="fa-solid fa-user nav-icon-mobile"></i><span>Sobre mí</span></a></li>
+        <li><a href="#habilidades" class="nav-link" role="menuitem"><i class="fa-solid fa-microchip nav-icon-mobile"></i><span>Habilidades</span></a></li>
+        <li><a href="#proyectos" class="nav-link" role="menuitem"><i class="fa-solid fa-folder-open nav-icon-mobile"></i><span>Proyectos</span></a></li>
+        <li><a href="#formacion" class="nav-link" role="menuitem"><i class="fa-solid fa-graduation-cap nav-icon-mobile"></i><span>Formación</span></a></li>
+        <li><a href="#cv" class="nav-link" role="menuitem"><i class="fa-solid fa-file-pdf nav-icon-mobile"></i><span>CV</span></a></li>
+        <li><a href="#contacto" class="nav-link" role="menuitem"><i class="fa-solid fa-paper-plane nav-icon-mobile"></i><span>Contacto</span></a></li>
       </ul>
 
       <!-- Botón Menú Hamburguesa Móvil -->
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -67,75 +73,91 @@
     <!-- =========================================================================
          1. SECCIÓN HERO / INICIO
          ========================================================================= -->
+    <!-- =========================================================================
+         1. SECCIÓN HERO / INICIO (Estilo fotográfico inmersivo con overlay violeta)
+         ========================================================================= -->
     <section class="section hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            <span>Disponible para nuevos proyectos & aprendizaje</span>
-          </div>
+      <div class="hero-bg-overlay"></div>
 
-          <h1 class="hero-greeting">
-            Hola, soy <span class="text-gradient">Víctor Mireles</span>
-          </h1>
-
-          <div class="hero-role">
-            <i class="fa-solid fa-code"></i>
-            <span>Estudiante de Análisis de Sistemas & Desarrollador</span>
-          </div>
-
-          <p class="hero-description">
-            Desarrollo soluciones web y aplicaciones orientadas a la gestión, automatización y resolución de problemas, mientras continúo fortaleciendo mis conocimientos en programación, bases de datos e inteligencia artificial.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#proyectos" class="btn btn-primary">
-              <i class="fa-solid fa-layer-group"></i>
-              <span>Ver proyectos</span>
-            </a>
-            <a href="assets/docs/CV_Victor_Mireles.pdf" class="btn btn-secondary btn-download-cv" download="CV_Victor_Mireles.pdf">
-              <i class="fa-solid fa-file-arrow-down"></i>
-              <span>Descargar CV</span>
-            </a>
-          </div>
-
-          <div class="hero-socials">
-            <span class="hero-social-label">Conecta conmigo:</span>
-            <!-- Reemplaza TU_GITHUB y TU_LINKEDIN con tus enlaces de perfil -->
-            <a href="https://github.com/Victor67567" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="GitHub de Víctor Mireles">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/Victor67567" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="LinkedIn de Víctor Mireles">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#contacto" class="social-pill-link" aria-label="Enviar correo">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
+      <div class="container hero-container">
+        <!-- Monograma Hexagonal estilo portafolio moderno -->
+        <div class="hero-hex-badge reveal">
+          <div class="hex-shape">
+            <span class="hex-text">&lt;VM/&gt;</span>
           </div>
         </div>
 
-        <!-- Elemento Visual Tecnológico: Panel de Código / Tarjeta de Desarrollador -->
-        <div class="hero-visual reveal">
-          <div class="terminal-card">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-              <div class="terminal-title">
-                <i class="fa-solid fa-file-code"></i>
-                <span>developer.config.ts</span>
-              </div>
-              <div class="terminal-actions">
-                <button class="terminal-btn" id="copy-code-btn" title="Copiar configuración" aria-label="Copiar código">
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-              </div>
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Disponible para nuevos proyectos & aprendizaje</span>
             </div>
 
-            <div class="terminal-body">
-              <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+            <h1 class="hero-greeting">
+              Hola, soy <span class="text-gradient">Víctor Mireles</span>. Diseño y desarrollo soluciones de software.
+            </h1>
+
+            <div class="hero-role">
+              <i class="fa-solid fa-code"></i>
+              <span>Estudiante de Análisis de Sistemas en IUTEPI · Desarrollador</span>
+            </div>
+
+            <p class="hero-description">
+              Desarrollo soluciones web y aplicaciones orientadas a la gestión, automatización y resolución de problemas, con formación sólida en programación, bases de datos e inteligencia artificial.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#proyectos" class="btn btn-primary">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Ver proyectos</span>
+              </a>
+              <a href="assets/docs/CV_Victor_Mireles.pdf" class="btn btn-secondary btn-download-cv" download="CV_Victor_Mireles.pdf">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Descargar CV</span>
+              </a>
+              <a href="#contacto" class="btn btn-outline">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Hablemos</span>
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <span class="hero-social-label">Conecta conmigo:</span>
+              <a href="https://github.com/Victor67567" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="GitHub de Víctor Mireles">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/Victor67567" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="LinkedIn de Víctor Mireles">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#contacto" class="social-pill-link" aria-label="Enviar correo">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Elemento Visual Tecnológico: Panel de Código / Tarjeta de Desarrollador -->
+          <div class="hero-visual reveal">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">
+                  <i class="fa-solid fa-file-code"></i>
+                  <span>developer.config.ts</span>
+                </div>
+                <div class="terminal-actions">
+                  <button class="terminal-btn" id="copy-code-btn" title="Copiar configuración" aria-label="Copiar código">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="terminal-body">
+                <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
   <span class="code-prop">nombre</span>: <span class="code-str">"Víctor Johan Mireles Torres"</span>,
   <span class="code-prop">perfil</span>: <span class="code-str">"Estudiante & Desarrollador de Sistemas"</span>,
   <span class="code-prop">institucion</span>: <span class="code-str">"IUTEPI (6to Semestre)"</span>,
@@ -150,18 +172,27 @@
   ],
   <span class="code-prop">enfoque</span>: <span class="code-str">"Construir soluciones reales y eficientes 🚀"</span>
 };</code></pre>
-            </div>
-
-            <div class="terminal-status-bar">
-              <div class="status-item">
-                <span class="pulse-dot"></span>
-                <span>TypeScript / UTF-8</span>
               </div>
-              <div class="status-item">
-                <span>Estado: Activo</span>
+
+              <div class="terminal-status-bar">
+                <div class="status-item">
+                  <span class="pulse-dot"></span>
+                  <span>TypeScript / UTF-8</span>
+                </div>
+                <div class="status-item">
+                  <span>Estado: Activo</span>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Indicador de scroll estilo referencia -->
+        <div class="hero-scroll-wrapper reveal">
+          <a href="#sobre-mi" class="hero-scroll-prompt" aria-label="Conoce más sobre mi trabajo">
+            <span>Conoce más sobre mi trabajo</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
         </div>
       </div>
     </section>
