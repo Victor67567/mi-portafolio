@@ -636,8 +636,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 13. MANEJO DE DESCARGA DE CV
+  // 13. ENLACES DIRECTOS DE CORREO (Gmail Web en PC / App nativa en Móvil) & CV
   // --------------------------------------------------------------------------
+  const directEmailLinks = document.querySelectorAll('.direct-email-link');
+  const isMobileDevice = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const emailSubject = encodeURIComponent('Contacto desde tu Portafolio Web');
+  const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONFIG.email)}&su=${emailSubject}`;
+  const mailtoUrl = `mailto:${CONFIG.email}?subject=${emailSubject}`;
+
+  directEmailLinks.forEach(link => {
+    if (isMobileDevice) {
+      link.setAttribute('href', mailtoUrl);
+      link.removeAttribute('target');
+      link.removeAttribute('rel');
+    } else {
+      link.setAttribute('href', gmailComposeUrl);
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+
+    link.addEventListener('click', () => {
+      showToast('Abriendo redactor de correo...', 'fa-solid fa-paper-plane');
+    });
+  });
+
   const cvDownloadBtns = document.querySelectorAll('.btn-download-cv');
   cvDownloadBtns.forEach(btn => {
     btn.addEventListener('click', () => {
