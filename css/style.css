@@ -1222,6 +1222,64 @@ img {
   }
 }
 
+.about-profile-header {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3.5vw, 24px);
+  margin-bottom: clamp(18px, 3.5vw, 24px);
+  padding-bottom: clamp(18px, 3.5vw, 24px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.about-avatar-wrapper {
+  position: relative;
+  width: clamp(118px, 24vw, 150px);
+  height: clamp(118px, 24vw, 150px);
+  padding: 3px;
+  border-radius: var(--border-radius-lg);
+  background: var(--gradient-primary);
+  box-shadow: 0 8px 28px rgba(56, 189, 248, 0.22);
+  flex-shrink: 0;
+}
+
+.about-avatar {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 85%;
+  border-radius: calc(var(--border-radius-lg) - 3px);
+  background-color: var(--bg-dark);
+}
+
+.about-profile-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-profile-name {
+  font-size: clamp(1.15rem, 3.2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.about-profile-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 5px 12px;
+  border-radius: var(--border-radius-full);
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--accent-cyan);
+  font-size: clamp(0.78rem, 2.2vw, 0.86rem);
+  font-weight: 600;
+}
+
 .about-text {
   display: flex;
   flex-direction: column;
@@ -2572,6 +2630,15 @@ img {
 
 /* SMARTPHONES PEQUEÑOS Y MEDIANOS (<= 640px) */
 @media (max-width: 640px) {
+  .about-profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-profile-meta {
+    align-items: center;
+  }
+
   .hero-actions {
     flex-direction: column;
     width: 100%;
