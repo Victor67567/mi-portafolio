@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     titulo: "Estudiante de Análisis de Sistemas & Desarrollador",
     email: "victormirelest2007@gmail.com",
     github: "https://github.com/Victor67567",
-    linkedin: "https://linkedin.com/in/Victor67567",
+    linkedin: "https://www.linkedin.com/in/victor-mireles-torres-b4148b448",
     cvPath: "assets/docs/CV_Victor_Mireles.pdf",
     institucion: "IUTEPI",
     ubicacion: "Acarigua, Venezuela"
